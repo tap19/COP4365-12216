@@ -14,10 +14,6 @@ namespace Project1
             Triangle('b');
             Triangle('c');
             Triangle('d');
-            // use a ReadLine to give the user opportunity to see program output
-            // https://msdn.microsoft.com/en-us/library/system.console.readline(v=vs.110).aspx
-            Console.Write("\nPress any key to continue...");
-            Console.ReadLine();
         }
         static void Triangle(char TriangleID)
         {
