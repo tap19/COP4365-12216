@@ -25,10 +25,10 @@ namespace Project3
             bool swapped = false;
             int temp = 0;
 
-            for (int i = 0; i < sentinel; i++)
+            for (int i = 0; i < sentinel-1; i++)
             {
                 swapped = false;
-                for (int j = 0; i < sentinel; i++)
+                for (int j = 0; j < sentinel-1; j++)
                 {
                     if (ints[j] > ints[j + 1])
                     {
