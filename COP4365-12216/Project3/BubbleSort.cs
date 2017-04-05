@@ -19,7 +19,7 @@ namespace Project3
         /// algorithm from https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm
         /// </summary>
         /// <param name="ints">an array of integers to be sorted</param>
-        public void sort(int[] ints)
+        public virtual void sort(int[] ints)
         {
             int sentinel = ints.Length;
             bool swapped = false;
