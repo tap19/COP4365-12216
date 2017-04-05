@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project3
 {
-    class BubbleSort_03
+    class BubbleSort_03 : BubbleSort
     {
         public BubbleSort_03()
         {

@@ -31,14 +31,17 @@ namespace Project3
             }
             return ints;
         }
-        public void PrintInts(int[] ints)
+        public void PrintInts(int[] ints, string arrayName)
         {
-            for(int i=0;i<ints.Length;i++)
+            Console.Write(arrayName + " : ");
+            for (int i=0;i<ints.Length;i++)
             {
                 Console.Write(ints[i]);
                 if (i != ints.Length - 1)
                     Console.Write(',');
             }
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }
