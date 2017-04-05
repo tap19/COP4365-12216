@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BubbleSort.cs" />
     <Compile Include="BubbleSort_03.cs" />
+    <Compile Include="HelperClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="BubbleSort_02.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -14,7 +14,21 @@ namespace Project3
         /// <param name="args">Command line arguments</param>
         static void Main(string[] args)
         {
-            Console.WriteLine("This is the main method!");
+            BubbleSort bs    = new BubbleSort();
+            HelperClass hc   = new HelperClass();
+            int[] ints       = hc.GetRandomInts(100,1000);
+
+            Console.Write("int array        : ");
+            hc.PrintInts(ints);
+            Console.WriteLine();
+            Console.WriteLine();
+
+            bs.sort(ints);
+            
+            Console.Write("sorted int array : ");
+                hc.PrintInts(ints);
+                Console.WriteLine();
+                Console.WriteLine();
         }
     }
 }

@@ -6,23 +6,43 @@ using System.Threading.Tasks;
 
 namespace Project3
 {
-    class BubbleSort
+    public class BubbleSort
     {
-        private int[] intArray = new int[0];
         /// <summary>
-        /// default BubbleSort constructor
+        /// default constructor
         /// </summary>
-        public BubbleSort(int[] intArray)
+        public BubbleSort()
         {
-            this.intArray = intArray;
+
         }
         /// <summary>
-        /// sorts the intArray property
+        /// algorithm from https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm
         /// </summary>
-        /// <returns></returns>
-        public int[] sort()
+        /// <param name="ints">an array of integers to be sorted</param>
+        public void sort(int[] ints)
         {
-            return intArray;
+            int sentinel = ints.Length;
+            bool swapped = false;
+            int temp = 0;
+
+            for (int i = 0; i < sentinel; i++)
+            {
+                swapped = false;
+                for (int j = 0; i < sentinel; i++)
+                {
+                    if (ints[j] > ints[j + 1])
+                    {
+                        temp = ints[j];
+                        ints[j] = ints[j + 1];
+                        ints[j + 1] = temp;
+                        swapped = true;
+                    }
+                }
+                if (!swapped)
+                {
+                    break;
+                }
+            }
         }
     }
 }

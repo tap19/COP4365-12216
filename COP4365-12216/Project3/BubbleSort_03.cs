@@ -8,6 +8,9 @@ namespace Project3
 {
     class BubbleSort_03
     {
+        public BubbleSort_03()
+        {
 
+        }
     }
 }
